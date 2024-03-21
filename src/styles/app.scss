@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+#app-view {
+    width: 960px;
+    height: 540px;
+
+    .view {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+}
+
+#home {
+    display: block !important;
+}

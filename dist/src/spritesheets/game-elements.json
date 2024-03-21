@@ -1,0 +1,165 @@
+{
+  "frames": [
+    {
+      "filename": "obstacle1",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 254,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 254,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 254,
+        "h": 95
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "obstacle2",
+      "frame": {
+        "x": 0,
+        "y": 95,
+        "w": 253,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 253,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 253,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "obstacle3",
+      "frame": {
+        "x": 0,
+        "y": 191,
+        "w": 253,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 253,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 253,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "enem1",
+      "frame": {
+        "x": 254,
+        "y": 0,
+        "w": 111,
+        "h": 189
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 111,
+        "h": 189
+      },
+      "sourceSize": {
+        "w": 111,
+        "h": 189
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "enem3",
+      "frame": {
+        "x": 0,
+        "y": 287,
+        "w": 130,
+        "h": 189
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 130,
+        "h": 189
+      },
+      "sourceSize": {
+        "w": 130,
+        "h": 190
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "enem2",
+      "frame": {
+        "x": 130,
+        "y": 287,
+        "w": 125,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 125,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 125,
+        "h": 188
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "game-elements.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 365,
+      "h": 476
+    },
+    "scale": 1
+  }
+}
