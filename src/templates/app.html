@@ -6,10 +6,24 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div id="app-view">
-        <!-- <div id="home" class="view"><%= require('./sub-template.html') %></div> -->
-        <button id="start">start</button>
-        <div id="canvas-container" class="view">
+    <div id="app_view" class="home_view">
+        <div id="home_view" class="view">
+            <button id="start" class="btn-to btn-play" data-to="play_view">Play</button>
+            <button class="btn-to btn-play" data-to="intructions_view">intructions</button>
+            <button class="btn-to btn-play" data-to="highscore_view">highscore</button>
+        </div>
+        <div id="play_view" class="view">
+            <button class="btn-to" data-to="home_view">Home</button>
+            <div id="canvas-container">
+            </div>
+        </div>
+        <div id="intructions_view" class="view">
+            intructions
+            <button class="btn-to" data-to="home_view">Home</button>
+        </div>
+        <div id="highscore_view" class="view">
+            highscore
+            <button class="btn-to" data-to="home_view">Home</button>
         </div>
     </div>
 </body>

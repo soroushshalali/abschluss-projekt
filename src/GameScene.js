@@ -46,7 +46,6 @@ export default class GameScene extends Phaser.Scene {
     
         document.getElementById('start').addEventListener('click', ()=>{
             this.isGameRunning = !this.isGameRunning;
-            console.log(this.isGameRunning);
         })
     
         this.delay = 2000;

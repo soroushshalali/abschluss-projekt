@@ -1,3 +1,11 @@
+@mixin setDisplay($viewName) {
+    .#{$viewName} {
+      ##{$viewName} {
+        display: block;
+      }
+    }
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -5,17 +13,31 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-#app-view {
+
+#app_view {
     width: 960px;
     height: 540px;
 
     .view {
         width: 100%;
         height: 100%;
-        background-color: red;
+        display: none;
+
+        &#home_view {
+            background-color: green;
+        }
+
+        &#intructions_view {
+            background-color: purple;
+        }
+
+        &#highscore_view {
+            background-color: yellow;
+        }
     }
 }
 
-#home {
-    display: block !important;
-}
+@include setDisplay('play_view');
+@include setDisplay('home_view');
+@include setDisplay('intructions_view');
+@include setDisplay('highscore_view');
