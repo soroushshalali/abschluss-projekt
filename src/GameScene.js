@@ -116,6 +116,8 @@ export default class GameScene extends Phaser.Scene {
 
     updateScore() {
         this.score++;
+        let hudScore = document.getElementById('score');
+        hudScore.innerHTML = this.score;
         console.log('score:', this.score);
     }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= htmlWebpackPlugin.options.title %></title>
-<script defer src="bundle6dbbf88aa08e21c937ff.js"></script></head>
+<script defer src="bundlec3f4ee5f3a9c704ce3b6.js"></script></head>
 <body>
     <div id="app_view" class="home_view">
         <div id="home_view" class="view">
@@ -20,6 +20,9 @@
         </div>
         <div id="play_view" class="view">
             <button class="btn btn-to btn-settings" data-to="settings_view"><img class="icon" src="52b9a33f9d784530038f.svg" alt="pause"></button>
+            <div class="hud">
+                <div><img class="icon" src="11729a43576b7431a036.svg" alt="score"><span id="score">0</span></div>
+            </div>
             <div id="canvas-container">
             </div>
         </div>
@@ -177,7 +180,9 @@
         </div>
         <div id="settings_view" class="view">
             <button class="btn btn-to btn-settings" data-to="play_view"><img class="icon" src="bea9a61f1a377e3b36af.svg" alt="resume"></button>
-            <button class="btn btn-to" data-to="home_view"><img class="icon" src="e6007b865895ce07818f.svg" alt="home"></button>
+            <div class="nav">
+                <button class="btn btn-to" data-to="home_view"><img class="icon" src="e6007b865895ce07818f.svg" alt="home"></button>
+            </div>
         </div>
         <footer class="footer">
             <button class="btn-to" data-to="imprint_view">Impressum</button>

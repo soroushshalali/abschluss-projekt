@@ -9,4 +9,26 @@
         padding: 0;
         line-height: 0;
     }
+
+    .hud {
+        position: absolute;
+        right: 100px;
+        top: 25px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+
+            .icon, .time {
+                margin-right: 8px;
+                width: 20px;
+            }
+        }
+
+    }
 }
