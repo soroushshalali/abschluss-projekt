@@ -1,0 +1,25 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    text-align: right;
+
+    .play_view &{
+        display: none;
+    }
+    
+    &:hover {
+        button {
+            opacity: 1;
+            transition-duration: 400ms;
+        } 
+    }
+    
+    button {
+        background-color: transparent;
+        border: none;
+        color: var(--footer-color);
+        opacity: 0.6;
+        transition-duration: 400ms;
+    }
+}

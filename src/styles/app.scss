@@ -16,13 +16,19 @@ body {
     font-size: var(--body-fz);
     background-image: url(../img/body-bg.jpg);
     background-size: cover;
+    font-family: 'Poppins';
 
     #app_view {
         width: 960px;
         height: 540px;
+        position: relative;
         overflow: hidden;
         border: var(--app-border);
         border-radius: var(--app-border-radius);
+    }
+
+    button, .btn, .btn-to {
+        cursor: pointer;
     }
 }
 

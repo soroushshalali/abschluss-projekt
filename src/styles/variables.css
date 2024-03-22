@@ -9,20 +9,22 @@
     --content-wrapper-line-height: 30px;
     --content-wrapper-header-fz: 28px;
 
-    --btn-padding: 4px 16px;
+    --btn-padding: 8px 32px;
     --btn-font-size: 18px;
-    --btn-border: 2px solid gray;
+    --btn-border: 1px solid #fff;
     --btn-color: #fff;
-    --btn-background-color: #000;
-    --btn-box-shadow: 0 0 4px gray;
+    --btn-background-color: transparent;
+    --btn-box-shadow: 0 0 4px rgb(250, 250, 250);
 
-    --home-btn-background-color: #fff;
-    --home-btn-background-color-hover: #df0707;
+    --home-btn-background-color: #b3ff00;
+    --home-btn-background-color-hover: #d4ff6e;
     --home-btn-fz: 18px;
-    --home-btn-color: #df0707;
-    --home-btn-color-hover: #838383;
+    --home-btn-color: #fff;
+    --home-btn-color-hover: #ffffff;
+
+    --footer-color: #fff;
 
     --scrollbar-thumb-border-radius: 10px;
-    --scrollbar-track-background-color: rgb(255, 136, 0);
-    --scrollbar-thumb-background-color: #b4b4b4;
+    --scrollbar-track-background-color: #ffffffde;
+    --scrollbar-thumb-background-color: #ff8800;
 }
