@@ -19,10 +19,7 @@
             </div>
         </div>
         <div id="play_view" class="view">
-            <!-- <button class="btn btn-to" data-to="home_view">Home</button> -->
-            <div class="settings">
-                <button class="btn btn-settings-show">*</button>
-            </div>
+            <button class="btn btn-to btn-settings" data-to="settings_view"><img class="icon" src="../img/icons/settings.svg" alt="pause"></button>
             <div id="canvas-container">
             </div>
         </div>
@@ -176,6 +173,12 @@
                 <div class="btn-wrapper">
                     <button class="btn btn-to" data-to="home_view">Home</button>
                 </div>
+            </div>
+        </div>
+        <div id="settings_view" class="view">
+            <button class="btn btn-to btn-settings" data-to="play_view"><img class="icon" src="../img/icons/joystick.svg" alt="resume"></button>
+            <div class="nav">
+                <button class="btn btn-to" data-to="home_view"><img class="icon" src="../img/icons/home.svg" alt="home"></button>
             </div>
         </div>
         <footer class="footer">

@@ -1,7 +1,12 @@
 #play_view {
-    .settings {
+    .btn-settings {
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 20px;
+        top: 20px;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        line-height: 0;
     }
 }

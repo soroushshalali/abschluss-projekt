@@ -23,14 +23,15 @@ buttons.forEach(button => {
     });
 });
 
-let btnSettingsShow = document.querySelector('.settings .btn-settings-show');
+const btnSettings = document.querySelectorAll('.btn-settings');
 
-btnSettingsShow.addEventListener('click', ()=>{
-    gameScene.pauseResume();
-})
+btnSettings.forEach(btn => {
+    btn.addEventListener('click', ()=>{
+        gameScene.pauseResume();
+    });
+});
 
 function changeView(nextViewId) {
-    console.log('next View: ', nextViewId);
     let appView= document.getElementById('app_view');
     appView.removeAttribute('class');
     appView.classList.add(nextViewId);
