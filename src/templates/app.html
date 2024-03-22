@@ -8,9 +8,15 @@
 <body>
     <div id="app_view" class="home_view">
         <div id="home_view" class="view">
-            <button id="start" class="btn-to btn-play" data-to="play_view">Play</button>
-            <button class="btn-to btn-play" data-to="intructions_view">intructions</button>
-            <button class="btn-to btn-play" data-to="highscore_view">highscore</button>
+            <div class="content-wrapper">
+                <div class="nav">
+                    <ul>
+                        <li class="home-btn-wrapper btn-to" data-to="play_view"><button id="start" class="home-btn"><span>Play</span></button></li>
+                        <li class="home-btn-wrapper btn-to" data-to="intructions_view"><button class="home-btn"><span>intructions</span></button></li>
+                        <li class="home-btn-wrapper btn-to" data-to="highscore_view"><button class="home-btn"><span>highscore</span></button></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div id="play_view" class="view">
             <button class="btn btn-to" data-to="home_view">Home</button>

@@ -12,6 +12,12 @@
     --btn-background-color: #000;
     --btn-box-shadow: 0 0 4px gray;
 
+    --home-btn-background-color: #fff;
+    --home-btn-background-color-hover: #df0707;
+    --home-btn-fz: 18px;
+    --home-btn-color: #df0707;
+    --home-btn-color-hover: #838383;
+
     --scrollbar-thumb-border-radius: 10px;
     --scrollbar-track-background-color: rgb(255, 136, 0);
     --scrollbar-thumb-background-color: #b4b4b4;

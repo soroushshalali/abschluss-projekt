@@ -13,28 +13,9 @@ body {
     min-height: 100vh;
     margin: 0;
     color: var(--body-color);
-}
-
-#app_view {
-    width: 960px;
-    height: 540px;
-
-    .view {
-        width: 100%;
-        height: 100%;
-        display: none;
-
-        &#home_view {
-            background-color: green;
-        }
-
-        &#intructions_view {
-            background-color: purple;
-        }
-
-        &#highscore_view {
-            background-color: gray;
-        }
+    #app_view {
+        width: 960px;
+        height: 540px;
     }
 }
 
