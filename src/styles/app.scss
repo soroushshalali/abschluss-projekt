@@ -36,3 +36,6 @@ body {
 @include setDisplay('home_view');
 @include setDisplay('intructions_view');
 @include setDisplay('highscore_view');
+@include setDisplay('imprint_view');
+@include setDisplay('dpr_view');
+@include setDisplay('conditions_view');
