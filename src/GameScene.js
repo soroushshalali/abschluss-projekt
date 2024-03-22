@@ -119,5 +119,9 @@ export default class GameScene extends Phaser.Scene {
         console.log('score:', this.score);
     }
 
+    pauseResume() {
+        this.time.paused = !this.time.paused;
+    }
+
     update() {}
 }
