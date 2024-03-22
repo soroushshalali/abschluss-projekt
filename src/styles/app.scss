@@ -12,6 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    color: var(--body-color);
 }
 
 #app_view {
@@ -32,7 +33,7 @@ body {
         }
 
         &#highscore_view {
-            background-color: yellow;
+            background-color: gray;
         }
     }
 }

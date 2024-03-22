@@ -1,0 +1,18 @@
+:root {
+    --body-color: #fff;
+
+    --content-wrapper-padding-x: 0px;
+    --content-wrapper-line-height: 30px;
+    --content-wrapper-header-fz: 28px;
+
+    --btn-padding: 4px 16px;
+    --btn-font-size: 18px;
+    --btn-border: 2px solid gray;
+    --btn-color: #fff;
+    --btn-background-color: #000;
+    --btn-box-shadow: 0 0 4px gray;
+
+    --scrollbar-thumb-border-radius: 10px;
+    --scrollbar-track-background-color: rgb(255, 136, 0);
+    --scrollbar-thumb-background-color: #b4b4b4;
+}
