@@ -1,5 +1,9 @@
 :root {
-    --body-color: #fff;
+    --body-color: #000000;
+    --body-fz: 18px;
+
+    --app-border: 4px solid #fff;
+    --app-border-radius: 10px;
 
     --content-wrapper-padding-x: 0px;
     --content-wrapper-line-height: 30px;
