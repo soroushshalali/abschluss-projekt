@@ -78,15 +78,21 @@ export default class GameScene extends Phaser.Scene {
                 this.updateTimer();
     
                 if (this.countdownTime <= 0) {
-                    this.countdownTimer.remove(false);
-                    this.index.changeView('play_dialog_view');
-                    let scoreInPlayDialog = document.getElementById('dialog_score');
-                    scoreInPlayDialog.innerHTML = this.score;
+                    this.finished();
                 }
             },
             callbackScope: this,
             loop: true
         });
+    }
+
+    finished(){
+        this.countdownTimer.remove(false);
+        this.index.changeView('play_dialog_view');
+        this.isGameRunning = false;
+
+        let scoreInPlayDialog = document.getElementById('dialog_score');
+        scoreInPlayDialog.innerHTML = this.score;
     }
 
     startRandomMovement() {
@@ -147,6 +153,12 @@ export default class GameScene extends Phaser.Scene {
 
     pauseResume() {
         this.time.paused = !this.time.paused;
+    }
+
+    restart(){
+        this.startTimer();
+        this.score = 0;
+        this.isGameRunning = true;
     }
 
     update() {}

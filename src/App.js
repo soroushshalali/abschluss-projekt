@@ -38,6 +38,10 @@ export default class App {
             this.gameScene.emitter.emit('start-game');
         });
 
+        document.getElementById('restart').addEventListener('click', ()=>{
+            this.gameScene.restart();
+        });
+
         const btnSettings = document.querySelectorAll('.btn-settings');
 
         btnSettings.forEach(btn => {
