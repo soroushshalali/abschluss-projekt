@@ -23,6 +23,11 @@ buttons.forEach(button => {
     });
 });
 
+document.getElementById('start').addEventListener('click', ()=>{
+    gameScene.isGameRunning = !gameScene.isGameRunning;
+    gameScene.emitter.emit('start-game');
+});
+
 const btnSettings = document.querySelectorAll('.btn-settings');
 
 btnSettings.forEach(btn => {

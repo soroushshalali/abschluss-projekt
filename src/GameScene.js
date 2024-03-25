@@ -5,6 +5,12 @@ export default class GameScene extends Phaser.Scene {
         super({ key: 'GameScene' });
         this.score = 0;
         this.isGameRunning = false;
+
+        this.emitter = new Phaser.Events.EventEmitter();
+
+        this.startTimer = this.startTimer.bind(this);
+
+        this.countdownTime = 0;
     }
 
     preload() {
@@ -13,6 +19,9 @@ export default class GameScene extends Phaser.Scene {
     }
 
     create() {
+
+        this.emitter.on('start-game', this.startTimer);
+
         this.add.image(480, 540, 'bg').setOrigin(0.5, 1);
         const obstacle1 = this.add.image(780, 540, 'elements-atlas', 'obstacle1').setOrigin(0.5, 1);
         const obstacle2 = this.add.image(480, 540, 'elements-atlas', 'obstacle2').setOrigin(0.5, 1);
@@ -44,10 +53,6 @@ export default class GameScene extends Phaser.Scene {
             }, 1000);
         });
     
-        document.getElementById('start').addEventListener('click', ()=>{
-            this.isGameRunning = !this.isGameRunning;
-        })
-    
         this.delay = 2000;
         this.time.addEvent({
             delay: this.delay,
@@ -55,15 +60,25 @@ export default class GameScene extends Phaser.Scene {
             callbackScope: this,
             loop: true
         });
+            
     }
+    
+    startTimer ()
+    {
+        this.countdownTime = 60;
 
-    setupInputEvents() {}
-
-    setupTimer() {
-        this.delay = 2000;
-        this.time.addEvent({
-            delay: this.delay,
-            callback: this.startRandomMovement,
+        this.countdownTimer = this.time.addEvent({
+            delay: 1000,
+            callback: () => {
+                this.countdownTime--;
+    
+                this.updateTimer();
+    
+                if (this.countdownTime <= 0) {
+                    this.countdownTimer.remove(false);
+    
+                }
+            },
             callbackScope: this,
             loop: true
         });
@@ -118,7 +133,11 @@ export default class GameScene extends Phaser.Scene {
         this.score++;
         let hudScore = document.getElementById('score');
         hudScore.innerHTML = this.score;
-        console.log('score:', this.score);
+    }
+
+    updateTimer() {
+        let hudTime = document.getElementById('time');
+        hudTime.innerHTML = this.countdownTime;
     }
 
     pauseResume() {
