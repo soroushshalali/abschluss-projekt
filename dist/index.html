@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-<script defer src="bundle76da0c30a572e30d757a.js"></script></head>
+    <title>Wurfspiel</title>
+<script defer src="bundlea97dd45d6f67824ebcce.js"></script></head>
 <body>
     <div id="app_view" class="home_view">
         <div id="home_view" class="view">
@@ -28,7 +28,19 @@
             </div>
         </div>
         <div id="play_dialog_view" class="view">
-            :)
+            <div class="content-wrapper">
+                <h2 class="headers-view">ENDERGEBNIS</h2>
+                <div class="content">
+                    <ul>
+                        <li><img class="icon" src="c159ed57678f104c0268.svg" alt="result"></li>
+                        <li><span id="dialog_score"></span></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><button class="btn btn-to" data-to="play_view" id="restart">Nochmal</button></li>
+                        <li><button class="btn btn-to" data-to="result_view">Speichern</button></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div id="intructions_view" class="view">
             <div class="content-wrapper">

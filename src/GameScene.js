@@ -80,6 +80,8 @@ export default class GameScene extends Phaser.Scene {
                 if (this.countdownTime <= 0) {
                     this.countdownTimer.remove(false);
                     this.index.changeView('play_dialog_view');
+                    let scoreInPlayDialog = document.getElementById('dialog_score');
+                    scoreInPlayDialog.innerHTML = this.score;
                 }
             },
             callbackScope: this,
