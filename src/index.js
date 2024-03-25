@@ -7,3 +7,33 @@ export default class Index{
 import App from "./App";
 
 let app = new App();
+
+
+document.getElementById('form').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    try {
+        const response = await fetch('http://localhost:3001/data', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok!');
+        }
+
+        const jsonResponse = await response.json();
+        console.log('Server response:', jsonResponse);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+});
