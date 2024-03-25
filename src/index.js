@@ -37,3 +37,22 @@ document.getElementById('form').addEventListener('submit', async function(event)
         console.error('Error:', error);
     }
 });
+
+let highScores;
+
+document.getElementById('instructions_btn').addEventListener('click', async () => {
+    try {
+        const response = await fetch('http://localhost:3001/data');
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok!');
+        }
+
+        highScores = await response.json();
+        console.log('Server response:', highScores);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+});
+
+console.log(highScores);
