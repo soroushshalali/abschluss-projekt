@@ -1,0 +1,52 @@
+#result_view{
+    .form {
+        .inputs-wrapper {
+            display: flex;
+
+            div {
+                min-width: 30%;
+                
+                &:nth-of-type(1) {
+                    min-width: unset;
+                }
+
+                label {
+                    display: block;
+                }
+
+                select {
+                    padding: 8px 16px;
+                    outline: none;
+                    border-radius: 4px;
+                    border: 1px solid #cccccc;
+                    margin-right: 12px;
+                    font-weight: bold;
+                }
+                
+                input {
+                    width: 200px;
+                    padding: 8px 16px;
+                    margin-right: 12px;
+                    border-radius: 4px;
+                    border: 1px solid #cccccc;
+                    font-weight: bold;
+                    outline: none;
+                }
+            }
+        }
+
+        .checkboxes {
+            margin-top: 16px;
+            div {
+                position: relative;
+                padding-left: 28px;
+
+                input {
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}

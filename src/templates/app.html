@@ -6,7 +6,7 @@
     <title>Wurfspiel</title>
 </head>
 <body>
-    <div id="app_view" class="play_dialog_view">
+    <div id="app_view" class="home_view">
         <div id="home_view" class="view">
             <div class="content-wrapper">
                 <div class="nav">
@@ -134,6 +134,51 @@
                 <div class="btn-wrapper">
                     <button class="btn btn-to" data-to="home_view">Home</button>
                 </div>
+            </div>
+        </div>
+        <div id="result_view" class="view">
+            <div class="content-wrapper">
+                <h2 class="headers-view">Highscore</h2>
+                <div class="content">
+                    <form class="form" action="">
+                        <div class="inputs-wrapper">
+                            <div>
+                                <label for="gender">Anrede*</label>
+                                <select name="gender" id="gender">
+                                    <option value="0">Frau</option>
+                                    <option value="1">Herr</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="name">Nickname*</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                                <label for="email">Email*</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="checkboxes">
+                            <div>
+                                <input type="checkbox" name="accept_conditions" id="accept_conditions">
+                                <label for="accept_conditions">Ja, ich akzeptiere die Teilnahmebedingungen und möchte am Gewinnspiel teilnehmen.*</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="accept_dpr" id="accept_dpr">
+                                <label for="accept_dpr">Ich habe den Datenschutz-Hinweis gelesen.*</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="allow_newsletter" id="allow_newsletter">
+                                <label for="allow_newsletter"> Ich möchte mich für den kostenlosen Newsletter registrieren lassen.</label>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="btn" type="submit">Speichern</button>
+                        </div>
+                    </form>
+                    <button class="btn btn-to" data-to="home_view">Home</button>
+                </div>
+   
             </div>
         </div>
         <div id="imprint_view" class="view">
