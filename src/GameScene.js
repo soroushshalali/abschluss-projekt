@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import Index from './index';
 
 export default class GameScene extends Phaser.Scene {
     constructor() {
@@ -7,6 +8,8 @@ export default class GameScene extends Phaser.Scene {
         this.isGameRunning = false;
 
         this.emitter = new Phaser.Events.EventEmitter();
+
+        this.index = new Index();
 
         this.startTimer = this.startTimer.bind(this);
 
@@ -76,7 +79,7 @@ export default class GameScene extends Phaser.Scene {
     
                 if (this.countdownTime <= 0) {
                     this.countdownTimer.remove(false);
-    
+                    this.index.changeView('play_dialog_view');
                 }
             },
             callbackScope: this,
