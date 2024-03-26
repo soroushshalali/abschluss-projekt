@@ -71,8 +71,10 @@ export default class App {
         });
         data['score'] = this.gameScene.score;
 
-
-        this.backend.insert(data);
+        if (this.backend.insert(data)) {
+            this.addDataInTable();
+            this.changeView('highscore_view')   ;         
+        }
     }
 
     addDataInTable(){

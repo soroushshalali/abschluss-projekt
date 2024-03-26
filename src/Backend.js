@@ -17,6 +17,7 @@ export default class Backend{
     
             const jsonResponse = await response.json();
             console.log('Server response:', jsonResponse);
+            return true;
         } catch (error) {
             console.error('Error:', error);
         }
