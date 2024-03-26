@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wurfspiel</title>
-<script defer src="bundle3de023d5df9a6f961513.js"></script></head>
+<script defer src="bundle592b88ac520d482f0dbc.js"></script></head>
 <body>
     <div id="app_view" class="result_view">
         <div id="home_view" class="view">
@@ -13,7 +13,7 @@
                     <ul>
                         <li class="home-btn-wrapper btn-to" data-to="play_view"><button id="start" class="home-btn">Spiel starten</button></li>
                         <li class="home-btn-wrapper btn-to" data-to="intructions_view"><button class="home-btn">Anleitung</button></li>
-                        <li class="home-btn-wrapper btn-to" data-to="highscore_view"><button class="home-btn">highscore</button></li>
+                        <li id="highscore_btn" class="home-btn-wrapper btn-to" data-to="highscore_view"><button class="home-btn">highscore</button></li>
                     </ul>
                 </div>
             </div>
@@ -68,67 +68,7 @@
             <div class="content-wrapper">
                 <h2 class="headers-view">Highscore</h2>
                 <div class="content">
-                    <table class="table">
-                        <tr>
-                          <th>Id</th>
-                          <th>Nickname</th>
-                          <th>Score</th>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
-                        <tr>
-                          <td>01</td>
-                          <td>Capitan</td>
-                          <td>265784</td>
-                        </tr>
+                    <table id="highscores_table" class="table">
                     </table>
                 </div>
                 <div class="btn-wrapper">
