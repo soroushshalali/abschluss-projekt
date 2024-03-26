@@ -6,7 +6,7 @@
     <title>Wurfspiel</title>
 </head>
 <body>
-    <div id="app_view" class="home_view">
+    <div id="app_view" class="result_view">
         <div id="home_view" class="view">
             <div class="content-wrapper">
                 <div class="nav">
@@ -85,26 +85,26 @@
                             <div>
                                 <label for="gender">Anrede*</label>
                                 <select name="gender" id="gender">
-                                    <option value="0">Frau</option>
                                     <option value="1">Herr</option>
+                                    <option value="0">Frau</option>
                                 </select>
                             </div>
                             <div>
                                 <label for="name">Nickname*</label>
-                                <input type="text" name="name" id="name">
+                                <input type="text" name="name" id="name" required>
                             </div>
                             <div>
                                 <label for="email">Email*</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                             </div>
                         </div>
                         <div class="checkboxes">
                             <div>
-                                <input type="checkbox" name="accept_conditions" id="accept_conditions">
+                                <input type="checkbox" name="accept_conditions" id="accept_conditions" required>
                                 <label for="accept_conditions">Ja, ich akzeptiere die Teilnahmebedingungen und möchte am Gewinnspiel teilnehmen.*</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="accept_dpr" id="accept_dpr">
+                                <input type="checkbox" name="accept_dpr" id="accept_dpr" required>
                                 <label for="accept_dpr">Ich habe den Datenschutz-Hinweis gelesen.*</label>
                             </div>
                             <div>

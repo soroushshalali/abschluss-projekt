@@ -14,8 +14,10 @@ db.run(`CREATE TABLE IF NOT EXISTS data (
     name TEXT,
     gender TEXT,
     email TEXT,
-    score INTEGER
-)`);
+    score INTEGER,
+    accept_conditions INTEGER,
+    accept_dpr INTEGER
+);`);
 
 app.use(cors());
 
@@ -32,8 +34,8 @@ app.get('/data', (req, res) => {
 });
 
 app.post('/data', (req, res) => {
-    const { name, gender, email, score } = req.body;
-    db.run('INSERT INTO data (name, gender, email, score) VALUES (?, ?, ?, ?)', [name, gender, email, score], function(err) {
+    const { name, gender, email, score, accept_conditions, accept_dpr } = req.body;
+    db.run('INSERT INTO data (name, gender, email, score, accept_conditions, accept_dpr) VALUES (?, ?, ?, ?, ?, ?)', [name, gender, email, score, accept_conditions, accept_dpr], function(err) {
         if (err) {
             console.log(err.message);
             res.status(500).json({ error: err.message });
