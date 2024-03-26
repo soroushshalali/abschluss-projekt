@@ -13,7 +13,8 @@ db.run(`CREATE TABLE IF NOT EXISTS data (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     gender TEXT,
-    email TEXT
+    email TEXT,
+    score INTEGER
 )`);
 
 app.use(cors());
@@ -31,8 +32,8 @@ app.get('/data', (req, res) => {
 });
 
 app.post('/data', (req, res) => {
-    const { name, gender, email } = req.body;
-    db.run('INSERT INTO data (name, gender, email) VALUES (?, ?, ?)', [name, gender, email], function(err) {
+    const { name, gender, email, score } = req.body;
+    db.run('INSERT INTO data (name, gender, email, score) VALUES (?, ?, ?, ?)', [name, gender, email, score], function(err) {
         if (err) {
             console.log(err.message);
             res.status(500).json({ error: err.message });

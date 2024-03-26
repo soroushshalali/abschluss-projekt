@@ -69,6 +69,8 @@ export default class App {
         formData.forEach((value, key) => {
             data[key] = value;
         });
+        data['score'] = this.gameScene.score;
+
 
         this.backend.insert(data);
     }
@@ -88,14 +90,14 @@ export default class App {
                     <tr>
                         <td>${row.id}</td>
                         <td>${row.name}</td>
-                        <td>${row.id}</td>
+                        <td>${row.score}</td>
                     </tr>
                     `;
                 });
             }
     
             let table = document.getElementById('highscores_table');
-            table.innerHTML += rowsElements;
+            table.innerHTML = rowsElements;
         }).catch(error => {
             console.error('Error while fetching high scores:', error);
         });
